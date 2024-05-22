@@ -1,4 +1,4 @@
-Thisis my build with things I need on a daily basis.
+This is my build with things I need on a daily basis.
 
 # BlueBuild Template &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
