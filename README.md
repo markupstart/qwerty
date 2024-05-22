@@ -21,7 +21,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 - Reboot again to complete the installation
   ```
   systemctl reboot
-
+  ```
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
