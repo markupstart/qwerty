@@ -1,7 +1,5 @@
 This is my build with things I need on a daily basis.
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
