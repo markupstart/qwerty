@@ -43,6 +43,8 @@ modules:
       - adwaita-qt6
       - plasma-breeze
       - nextcloud-client
+      - xdg-utils
+      - flatpak-xdg-utils
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
