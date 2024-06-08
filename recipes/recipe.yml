@@ -21,21 +21,10 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo    
     install:
-      - micro
-      - starship
-      - eza
-      - zoxide
-      - darktable
-      - btop
+      - darktable      
       - gnome-boxes
       - libreoffice
-      - ulauncher     
-      - breeze-gtk
-      - breeze-gtk-gtk3
-      - breeze-gtk-gtk4
-      - adwaita-qt5
-      - adwaita-qt6
-      - plasma-breeze
+      - ulauncher
       - nextcloud-client    
     remove:
       # example: removing firefox (in favor of the flatpak)
