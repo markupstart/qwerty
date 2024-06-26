@@ -28,7 +28,7 @@ modules:
       - nextcloud-client
       - river
       - fuzzel
-      - lxsession
+      - lxpolkit
       - wlr-randr
       - waybar
       - dunst
