@@ -25,7 +25,16 @@ modules:
       - gnome-boxes
       - libreoffice
       - ulauncher
-      - nextcloud-client    
+      - nextcloud-client
+      - river
+      - fuzzel
+      - lxsession
+      - wlr-randr
+      - waybar
+      - dunst
+      - swaybg
+      - grim
+      - alacritty
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
