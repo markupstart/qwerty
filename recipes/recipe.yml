@@ -26,17 +26,8 @@ modules:
       - libreoffice
       - ulauncher
       - nextcloud-client
-      - river
-      - fuzzel
-      - lxpolkit
-      - wlr-randr
-      - waybar
-      - dunst
-      - swaybg
-      - grim
       - alacritty
       - qt5ct
-      - xdg-desktop-portal-wlr
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
