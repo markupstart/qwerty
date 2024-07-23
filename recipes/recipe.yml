@@ -72,12 +72,6 @@ modules:
       remove:
       # - org.gnome.eog
       
-  - type: gnome-extensions
-    install:
-      - Move_Clockrmy.pobox.com.v31
-      - simple-workspaces-barnull-git.v3
-      - tactilelundal.io.v32
-
   - type: chezmoi
     # Installs chezmoi to /usr/bin/chezmoi from latest Github release
     install_chezmoi: true # Optional - Default: true  - Expects type: boolean
