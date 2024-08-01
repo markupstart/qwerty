@@ -55,7 +55,13 @@ modules:
       - thunar-media-tags-plugin
       - tumbler
       - lxappearance 
-      - lxsession
+      - lxpolkit
+      - pavucontrol
+      - xsetroot
+      - libX11-devel
+      - libXft-devel
+      - libXinerama-devel
+      - libxcb-devel
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
