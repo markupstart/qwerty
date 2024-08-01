@@ -47,6 +47,13 @@ modules:
       - rofi
       - dbus-x11
       - xorg-x11-drv-amdgpu
+      - Thunar
+      - engrampa
+      - thunar-volman
+      - thunar-archive-plugin
+      - thunar-vcs-plugin
+      - thunar-media-tags-plugin
+      - tumbler
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
