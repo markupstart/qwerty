@@ -62,6 +62,7 @@ modules:
       - libXft-devel
       - libXinerama-devel
       - libxcb-devel
+      - imlib2-devel
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
