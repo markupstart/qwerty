@@ -29,7 +29,25 @@ modules:
       - nextcloud-client
       - alacritty
       - qt5ct
-      #- cosmic-desktop
+      - libX11
+      - libXft
+      - libXinerama
+      - freetype
+      - fontconfig
+      - libxcb
+      - make
+      - git
+      - imlib2
+      - xset
+      - xorg-x11-server-Xorg
+      - dunst
+      - picom
+      - feh
+      - flameshot
+      - rofi
+      - dbus-x11
+      - xorg-x11-drv-amdgpu
+      - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
