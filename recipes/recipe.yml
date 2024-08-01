@@ -54,6 +54,8 @@ modules:
       - thunar-vcs-plugin
       - thunar-media-tags-plugin
       - tumbler
+      - lxappearance 
+      - lxsession
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
