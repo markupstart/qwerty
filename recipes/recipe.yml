@@ -63,6 +63,12 @@ modules:
       - libXinerama-devel
       - libxcb-devel
       - imlib2-devel
+      - qt5ct
+      - qt6ct
+      - plasma-breeze
+      - breeze-gtk
+      - adwaita-qt5
+      - adwaita-qt6
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
