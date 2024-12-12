@@ -1,3 +1,5 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: qwerty
 # description will be included in the image's metadata
@@ -6,20 +8,15 @@ description: This is my personal OS image.
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: latest # latest is also supported if you want new updates ASAP
-maximize_build_space:
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
-      - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
     repos:
-      #- https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-%OS_VERSION%.repo
     install:
       - darktable      
@@ -70,18 +67,10 @@ modules:
       - adwaita-qt5
       - adwaita-qt6
       - cosmic-desktop
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         - com.discordapp.Discord
         - com.dec05eba.gpu_screen_recorder
@@ -106,28 +95,6 @@ modules:
         - net.scribus.Scribus
         - org.kde.kdenlive
         - org.kde.okular
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-      # - org.gnome.eog
-      
-  - type: chezmoi
-    # Installs chezmoi to /usr/bin/chezmoi from latest Github release
-    install_chezmoi: true # Optional - Default: true  - Expects type: boolean
-    # () Git repository to initialize
-    repository: "https://github.com/markupstart/dotfiles" # Required - Default: n/a  - Expects type: string
-    # Enable the modules services globally for all users
-    enable_all_users: true # Optional - Default: true - Expects type: boolean
-    # Dotfiles will be updated with this interval
-    run_every: '1d' # Optional - Default: '1d' - Expects type: string
-    # Dotfile updates will wait this long after a boot before running
-    wait_after_boot: '5m' # Optional - Default: '5m' - Expects type: string
-    # Disable the service that initializes `repository` on users that are logged in or has linger enabled
-    disable_init: false # Optional - Default: false - Expects type: boolean
-    # Disable the timer that updates chezmoi with the interval set above
-    disable_update: false # Optional - Default: false - Expects type: boolean
-    # Policy for handling file that has changed on disk compared to your repo. Accepts "skip" or "replace"
-    changed-file-policy: "skip" # Optional - Default: "skip" - Expects type: string
-  
+    user: {} # Also add Flathub user repo, but no user packages
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
