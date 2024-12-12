@@ -14,7 +14,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - source: system
+    - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
@@ -77,11 +77,11 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # also remove firefox dependency (not required for all packages, this is a special case)
 
- - type: default-flatpaks
-   notify: true # Send notification after install/uninstall is finished (true/false)
-   system:
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
      # If no repo information is specified, Flathub will be used by default
-     install:
+    install:
        - com.discordapp.Discord
        - com.dec05eba.gpu_screen_recorder
        - com.obsproject.Studio
@@ -107,6 +107,6 @@ modules:
        - org.kde.okular
      remove:
        
-   user: {} # Also add Flathub user repo, but no user packages
+  user: {} # Also add Flathub user repo, but no user packages
 
- - type: signing # this sets up the proper policy & signing files for signed images to work fully
+- type: signing # this sets up the proper policy & signing files for signed images to work fully
