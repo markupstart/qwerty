@@ -72,39 +72,38 @@ modules:
       - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default     
-      install:
-        - com.discordapp.Discord
-        - com.dec05eba.gpu_screen_recorder
-        - com.obsproject.Studio
-        - com.obsproject.Studio.Plugin.GStreamerVaapi
-        - com.obsproject.Studio.Plugin.Gstreamer
-        - com.obsproject.Studio.Plugin.OBSVkCapture
-        - com.spotify.Client
-        - fr.handbrake.ghb
-        - org.gimp.GIMP
-        - org.gimp.GIMP.Plugin.FocusBlur
-        - org.gimp.GIMP.Plugin.Lensfun
-        - org.gimp.GIMP.Plugin.Resynthesizer
-        - org.supertuxproject.SuperTux
-        - org.freedesktop.Platform.VulkanLayer.MangoHud
-        - com.valvesoftware.Steam
-        - com.github.tchx84.Flatseal
-        - io.github.dosbox-staging
-        - md.obsidian.Obsidian
-        - net.lutris.Lutris
-        - com.makemkv.MakeMKV
-        - net.scribus.Scribus
-        - org.kde.kdenlive
-        - org.kde.okular
-      remove:
+      # "firefox" is the main package, "firefox-langpacks" is a dependency     
+ 
+ - type: default-flatpaks
+   notify: true # Send notification after install/uninstall is finished (true/false)
+   system:
+      # If no repo information is specified, Flathub will be used by default
+     install:
+       - com.discordapp.Discord
+       - com.dec05eba.gpu_screen_recorder
+       - com.obsproject.Studio
+       - com.obsproject.Studio.Plugin.GStreamerVaapi
+       - com.obsproject.Studio.Plugin.Gstreamer
+       - com.obsproject.Studio.Plugin.OBSVkCapture
+       - com.spotify.Client
+       - fr.handbrake.ghb
+       - org.gimp.GIMP
+       - org.gimp.GIMP.Plugin.FocusBlur
+       - org.gimp.GIMP.Plugin.Lensfun
+       - org.gimp.GIMP.Plugin.Resynthesizer
+       - org.supertuxproject.SuperTux
+       - org.freedesktop.Platform.VulkanLayer.MangoHud
+       - com.valvesoftware.Steam
+       - com.github.tchx84.Flatseal
+       - io.github.dosbox-staging
+       - md.obsidian.Obsidian
+       - net.lutris.Lutris
+       - com.makemkv.MakeMKV
+       - net.scribus.Scribus
+       - org.kde.kdenlive
+       - org.kde.okular
+    remove:
       # - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+  user: {} # Also add Flathub user repo, but no user packages
       
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+- type: signing # this sets up the proper policy & signing files for signed images to work fully
