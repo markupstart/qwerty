@@ -1,3 +1,4 @@
+---
 # image will be published to ghcr.io/<user>/<name>
 name: qwerty
 # description will be included in the image's metadata
