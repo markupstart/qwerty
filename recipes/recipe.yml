@@ -24,8 +24,7 @@ modules:
       - libreoffice
       - ulauncher
       - nextcloud-client
-      - alacritty
-      - qt5ct
+      - kitty
       - libX11
       - libXft
       - libXinerama
@@ -60,12 +59,8 @@ modules:
       - libXinerama-devel
       - libxcb-devel
       - imlib2-devel
-      - qt5ct
-      - qt6ct
       - plasma-breeze
       - breeze-gtk
-      - adwaita-qt5
-      - adwaita-qt6
       - cosmic-desktop
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
