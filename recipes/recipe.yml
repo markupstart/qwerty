@@ -39,6 +39,7 @@ modules:
       - swaylock
       - swayidle
       - pavucontrol
+      - waybar
       - cosmic-desktop
       - niri
   - type: default-flatpaks
