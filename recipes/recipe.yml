@@ -18,18 +18,29 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/ulysg/%OS_VERSION%.repo/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-%OS_VERSION%.repo
     install:
       - darktable      
-      - gnome-boxes
-      - libreoffice
-      - ulauncher
-      - nextcloud-client
-      - kitty      
-      - make
-      - git     
+      - nextcloud-client   
       - plasma-breeze
       - breeze-gtk
+      - fuzzel
+      - xwayland-satellite
+      - lxpolkit
+      - dunst
+      - thunar
+      - thunar-volman
+      - thunar-media-tags-plugin
+      - thunar-vcs-plugin
+      - thunar-archive-plugin
+      - tumbler
+      - swaybg
+      - swaylock
+      - swayidle
+      - pavucontrol
       - cosmic-desktop
+      - niri
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
