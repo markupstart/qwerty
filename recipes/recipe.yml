@@ -24,11 +24,10 @@ modules:
     install:
       - darktable      
       - nextcloud-client   
-      - plasma-breeze
-      - breeze-gtk
       - fuzzel
       - xwayland-satellite
       - lxpolkit
+      - polkit-kde
       - dunst
       - thunar
       - thunar-volman
