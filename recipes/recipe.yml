@@ -22,6 +22,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-%OS_VERSION%/celestelove-SwayOSD-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/markupstart/ghostty/repo/fedora-%OS_VERSION%/markupstart-ghostty-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-41/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-41-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/relativesure/all-packages/repo/fedora-%OS_VERSION%/relativesure-all-packages%OS_VERSION%.repo
+
     install:
       - darktable      
       - nextcloud-client   
@@ -86,6 +89,9 @@ modules:
       - chafa
       - eza
       - zoxide
+      - starship
+      - atuin
+      - topgrade
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
