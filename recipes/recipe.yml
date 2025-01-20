@@ -56,6 +56,33 @@ modules:
       - ghostty-neovim-plugin
       - ghostty-terminfo
       - ghostty
+      - adobe-source-code-pro-fonts
+      - cascadia-code-fonts
+      - docker-compose
+      - podman-docker
+      - edk2-ovmf
+      - flatpak-builder
+      - google-droid-sans-mono-fonts
+      - libvirt
+      - mozilla-fira-mono-fonts
+      - google-noto-emoji-fonts
+      - p7zip-plugins
+      - p7zip
+      - podman-compose
+      - podman-machine
+      - podman-tui
+      - podmansh
+      - powerline-fonts
+      - qemu
+      - rocm-hip
+      - rocm-opencl
+      - rocm-smi
+      - virt-install
+      - virt-v2v
+      - ydotool
+      - ptyxis
+      - fastfetch
+      - chafa     
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
