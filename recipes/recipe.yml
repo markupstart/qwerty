@@ -63,7 +63,6 @@ modules:
       - edk2-ovmf
       - flatpak-builder
       - google-droid-sans-mono-fonts
-      - libvirt
       - mozilla-fira-mono-fonts
       - google-noto-emoji-fonts
       - p7zip-plugins
@@ -80,7 +79,6 @@ modules:
       - virt-install
       - virt-v2v
       - virt-manager
-      - qemu
       - libvirt
       - ydotool
       - ptyxis
