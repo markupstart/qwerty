@@ -23,6 +23,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-%OS_VERSION%/celestelove-SwayOSD-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/markupstart/ghostty/repo/fedora-%OS_VERSION%/markupstart-ghostty-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/relativesure/all-packages/repo/fedora-%OS_VERSION%/relativesure-all-packages%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/markupstart/terminal-stuff/repo/fedora-%OS_VERSION%/markupstart-terminal-stuff-%OS_VERSION%.repo
 
     install:
       - darktable      
