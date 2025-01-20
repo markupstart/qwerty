@@ -103,7 +103,6 @@ modules:
       - dhcp-client
       - dnf5
       - dnf5-plugins
-      - ffmpeg
       - firefox
       - gamemode
       - ghostscript
