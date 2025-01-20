@@ -82,7 +82,9 @@ modules:
       - ydotool
       - ptyxis
       - fastfetch
-      - chafa     
+      - chafa
+      - eza
+      - zoxide
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
