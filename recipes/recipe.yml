@@ -131,7 +131,6 @@ modules:
       - pipewire-utils
       - xcb-util-cursor
       - xcb-util
-      - libxcb
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
