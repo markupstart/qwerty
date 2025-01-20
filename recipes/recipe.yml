@@ -79,6 +79,9 @@ modules:
       - rocm-smi
       - virt-install
       - virt-v2v
+      - virt-manager
+      - qemu
+      - libvirt
       - ydotool
       - ptyxis
       - fastfetch
