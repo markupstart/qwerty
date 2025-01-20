@@ -21,13 +21,14 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-%OS_VERSION%/celestelove-SwayOSD-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/markupstart/ghostty/repo/fedora-%OS_VERSION%/markupstart-ghostty-%OS_VERSION%.repo
     install:
       - darktable      
       - nextcloud-client   
       - fuzzel
       - xwayland-satellite
       - lxpolkit
-      - polkit-kde
+      - mate-polkit
       - dunst
       - thunar
       - thunar-volman
@@ -43,6 +44,18 @@ modules:
       - cosmic-desktop
       - niri
       - swayosd
+      - ghostty-themes
+      - ghostty-bat-syntax
+      - ghostty-nautilus
+      - ghostty-bash-completion
+      - ghostty-zsh-completion
+      - ghostty-docs
+      - ghostty-fish-completion
+      - ghostty-vim-plugin
+      - ghostty-shell-integration
+      - ghostty-neovim-plugin
+      - ghostty-terminfo
+      
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
