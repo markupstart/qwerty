@@ -55,6 +55,7 @@ modules:
       - ghostty-shell-integration
       - ghostty-neovim-plugin
       - ghostty-terminfo
+      - ghostty
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
