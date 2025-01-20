@@ -95,6 +95,41 @@ modules:
       - lazygit
       - mousepad
       - ristretto
+      - engrampa
+      - NetworkManager
+      - cups
+      - cups-filters
+      - cups-browsed
+      - dhcp-client
+      - dnf5
+      - dnf5-plugins
+      - ffmpeg
+      - firefox
+      - gamemode
+      - ghostscript
+      - google-noto-color-emoji-fonts
+      - google-noto-sans-cjk-fonts
+      - grub2-efi-ia32
+      - grub2-tools-extra
+      - gvfs-gphoto2
+      - gvfs-fuse
+      - gvfs-gphoto2
+      - gvfs-smb
+      - gvfs-nfs
+      - htop
+      - btop
+      - just
+      - ostree-grub2
+      - plymouth
+      - plymouth-system-theme
+      - plymouth-theme-spinner
+      - samba-client
+      - nano
+      - wget2
+      - wl-clipboard
+      - zip
+      - zram-generator-defaults
+      - pipewire-utils
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
