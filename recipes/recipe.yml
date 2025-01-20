@@ -43,7 +43,7 @@ modules:
       - swayidle
       - pavucontrol
       - waybar
-      - cosmic-desktop
+      - tuigreet
       - niri
       - swayosd
       - ghostty-themes
