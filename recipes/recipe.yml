@@ -132,6 +132,12 @@ modules:
       - xcb-util-cursor
       - xcb-util
       - xorg-x11-server-Xwayland
+      - glibc-all-langpacks
+      - langpacks-core-en
+      - langpacks-en
+      - langpacks-fonts-en
+      - langtable
+      - fedora-repos-ostree
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
