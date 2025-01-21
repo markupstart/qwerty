@@ -139,6 +139,7 @@ modules:
       - fedora-repos-ostree
       - xdg-user-dirs
       - xdg-utils
+      - gnome-boxes
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
