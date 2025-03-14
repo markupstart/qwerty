@@ -6,8 +6,8 @@ name: qwerty
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora/fedora-bootc
-image-version: 41 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
   - type: files
@@ -17,19 +17,17 @@ modules:
 
   - type: rpm-ostree
     repos:
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/markupstart/xwayland-satellite/repo/fedora-%OS_VERSION%/markupstart-xwayland-satellite-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/markupstart/SwayOSD/repo/fedora-%OS_VERSION%/markupstart-SwayOSD-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/markupstart/ghostty/repo/fedora-%OS_VERSION%/markupstart-ghostty-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/markupstart/terminal-stuff/repo/fedora-%OS_VERSION%/markupstart-terminal-stuff-%OS_VERSION%.repo
-
+      - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-%OS_VERSION%/celestelove-SwayOSD-%OS_VERSION%.repo
     install:
       - darktable      
       - nextcloud-client   
       - fuzzel
       - xwayland-satellite
       - lxpolkit
-      - mate-polkit
+      - polkit-kde
       - dunst
       - thunar
       - thunar-volman
@@ -42,105 +40,9 @@ modules:
       - swayidle
       - pavucontrol
       - waybar
-      - tuigreet
+      - cosmic-desktop
       - niri
       - swayosd
-      - ghostty-themes
-      - ghostty-bat-syntax
-      - ghostty-nautilus
-      - ghostty-bash-completion
-      - ghostty-zsh-completion
-      - ghostty-docs
-      - ghostty-fish-completion
-      - ghostty-vim-plugin
-      - ghostty-shell-integration
-      - ghostty-neovim-plugin
-      - ghostty-terminfo
-      - ghostty
-      - adobe-source-code-pro-fonts
-      - cascadia-code-fonts
-      - docker-compose
-      - podman-docker
-      - edk2-ovmf
-      - flatpak-builder
-      - google-droid-sans-mono-fonts
-      - mozilla-fira-mono-fonts
-      - google-noto-emoji-fonts
-      - p7zip-plugins
-      - p7zip
-      - distrobox
-      - podman-compose
-      - podman-machine
-      - podman-tui
-      - podmansh
-      - powerline-fonts
-      - qemu
-      - rocm-hip
-      - rocm-opencl
-      - rocm-smi
-      - virt-install
-      - virt-v2v
-      - virt-manager
-      - libvirt
-      - ydotool
-      - ptyxis
-      - fastfetch
-      - chafa
-      - eza
-      - zoxide
-      - starship
-      - atuin
-      - topgrade
-      - lazygit
-      - mousepad
-      - ristretto
-      - engrampa
-      - NetworkManager
-      - cups
-      - cups-filters
-      - cups-browsed
-      - dhcp-client
-      - dnf5
-      - dnf5-plugins
-      - firefox
-      - gamemode
-      - ghostscript
-      - google-noto-color-emoji-fonts
-      - google-noto-sans-cjk-fonts
-      - grub2-efi-ia32
-      - grub2-tools-extra
-      - gvfs-gphoto2
-      - gvfs-fuse
-      - gvfs-gphoto2
-      - gvfs-smb
-      - gvfs-nfs
-      - htop
-      - btop
-      - just
-      - ostree-grub2
-      - plymouth
-      - plymouth-system-theme
-      - plymouth-theme-spinner
-      - samba-client
-      - nano
-      - wget2
-      - wl-clipboard
-      - zip
-      - zram-generator-defaults
-      - pipewire-utils
-      - xcb-util-cursor
-      - xcb-util
-      - xorg-x11-server-Xwayland
-      - glibc-all-langpacks
-      - langpacks-core-en
-      - langpacks-en
-      - langpacks-fonts-en
-      - langtable
-      - fedora-repos-ostree
-      - xdg-user-dirs
-      - xdg-utils
-      - gnome-boxes
-      
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
