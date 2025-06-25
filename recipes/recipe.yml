@@ -48,6 +48,7 @@ modules:
       - swayosd
       - cargo
       - ghostty
+      - pamixer
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
