@@ -50,6 +50,7 @@ modules:
       - ghostty
       - pamixer
       - nwg-look
+      - libreoffice
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
