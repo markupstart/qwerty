@@ -21,7 +21,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/alebastr/sway-extras/repo/fedora-%OS_VERSION%/alebastr-sway-extras-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-%OS_VERSION%/celestelove-SwayOSD-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/xeriab/ghostty/repo/fedora-%OS_VERSION%/xeriab-ghostty-%OS_VERSION%.repo
-
+      - https://copr.fedorainfracloud.org/coprs/markupstart/nwg-shell/repo/fedora-%OS_VERSION%/markupstart-nwg-shell-%OS_VERSION%.repo
        
     install:
       - darktable      
@@ -49,6 +49,7 @@ modules:
       - cargo
       - ghostty
       - pamixer
+      - nwg-look
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
